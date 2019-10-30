@@ -36,7 +36,7 @@ function timer(){
 	}
 }
 function result_count(){
-    var a = [$("input[name='q1']:checked").val(),$("input[name='q2']:checked").val()];
+    var a = [$("input[name='q1']:checked").val(),$("input[name='q2']:checked").val(), $("input[name='q3']:checked").val()];
     console.log("A array:"+a);
     for(var i=0;i<a.length;i++){
         if(a[i]===questions[i].ans){
