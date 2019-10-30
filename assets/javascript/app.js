@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#questions").hide();
+    $(".questions").hide();
 var questions =[
     {
         quest: "What is dwights cousin's name?",
@@ -54,7 +54,7 @@ $("#ans").on("click", function(){
 
 $("#start").on("click",function() {
     $("#start").hide();
-    $("#questions").show();
+    $(".questions").show();
     //showQuests();
     timer();
     /*for (let i = 0; i < questions.length; i++) {
