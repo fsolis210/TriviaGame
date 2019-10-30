@@ -1,5 +1,7 @@
 $(document).ready(function () {
     $(".questions").hide();
+    $("#ans").hide();
+    
 var questions =[
     {
         quest: "What is dwights cousin's name?",
@@ -12,12 +14,11 @@ var questions =[
         ans: "Cornell",
     },
     {
-        quest: "Toby broke his back in ______ ?",
+        quest: "Toby broke his neck while zip lining where?",
         choice: ["Hawaii", "Greece", "Port A", "Cosa Rica"],
-        ans: 3
+        ans: "Cosa Rica",
     }];
 
-    // $("input[name='Q1']:checked").val();
 
 var correct = 0;
 var wrong = 0;
@@ -47,19 +48,17 @@ function result_count(){
         }
     }
 }
-// start button //
+
 $("#ans").on("click", function(){
    result_count();
 })
+// start button //
 
 $("#start").on("click",function() {
     $("#start").hide();
     $(".questions").show();
-    //showQuests();
+    $("#ans").show();
     timer();
-    /*for (let i = 0; i < questions.length; i++) {
-        questArray.push (questions[i]);
-        }*/
 })
 
 
